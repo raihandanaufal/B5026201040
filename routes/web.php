@@ -26,3 +26,7 @@ Route::get('hitung','ViewController@faktorial');
 Route::post('jawaban','ViewController@hasil');
 Route::get('tugasets','ViewController@showEts');
 
+//route CRUD
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
