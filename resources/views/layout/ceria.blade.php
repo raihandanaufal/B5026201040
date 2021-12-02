@@ -33,7 +33,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
           <div class="p-4 pt-5">
-            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://yt3.ggpht.com/ytc/AKedOLR0Q2jl80Ke4FS0WrTjciAu_w6WETLlI0HmzPa4jg=s900-c-k-c0x00ffffff-no-rj)"    ></a>
+            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://scontent.fsub9-1.fna.fbcdn.net/v/t39.30808-6/262223635_2208533269303806_1976217189306002877_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2sg5Z7l1Ou8AX9ou6CL&_nc_ht=scontent.fsub9-1.fna&oh=a6ba50b535f5a5ee4076f270eb720e98&oe=61AE3348)"    ></a>
             <div class="profile-text text-center mb-4">Raihanda Naufal Ashava <br> 5026201040</div>
             <ul class="list-unstyled components mb-5">
               <li>
