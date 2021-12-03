@@ -2,22 +2,54 @@
 @section("title", "Input Tugas")
 
 @section("isikonten")
-<body>
+    <h1>Input Tugas</h1>
 
+ <a href="/tugas " class="btn btn-warning"> < Kembali</a>
 
-	<a href="/tugas" class="btn btn-warning"> Kembali</a>
+ <br/>
+ <br/>
 
-	<br/>
-	<br/>
+ <form action="/tugas/store" method="post">
+  {{ csrf_field() }}
+        <div class="mb-3">
+        <label class="form-label">Pegawai</label>
+        <select class="form-select" name="IDPegawai" aria-label="Default select example">
+            @foreach($pegawai as $p)
+            <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
+            @endforeach
+        </select>
+        </div>
+        <div class="mb-3">
+            <label for="datetimepicker1" class="form-label">Tanggal</label>
+            <div class="form-group">
+                <div class="input-group date" id="datetimepicker">
+                  <input type="text" class="form-control" name="Tanggal" required/>
+                  <div class="input-group-addon input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                  </div>
+                </div>
+              </div>
+        <div class="mb-3">
+        <label class="form-label">Nama Tugas</label>
+        <input type="text" class="form-control" name="NamaTugas" required="required">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Status</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="hadir" name="Status" value="S" required>
+            <label class="form-check-label" for="hadir">
+              SUDAH
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input"  type="radio" id="tidak" name="Status" value="B" checked="checked" required>
+            <label class="form-check-label" for="tidak">
+              BELUM
+            </label>
+          </div>
+        </div>
 
-	<form action="/tugas/store" method="post">
-		{{ csrf_field() }}
-    	IDPegawai <input class="form-control" type="text" name="IDPegawai" required="required"> <br/>
-		Tanggal <input class="form-control" type="datetime" name="Tanggal" required="required"> <br/>
-		NamaTugas <input class="form-control" type="text" name="NamaTugas" required="required"> <br/>
-        Status <input class="form-control" type="text" maxlength="1" name="Status" required="required"> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    @endsection
-
+  <input type="submit" value="Simpan Data" class="btn btn-success">
+ </form>
+</div>
+@endsection
