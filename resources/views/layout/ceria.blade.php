@@ -33,7 +33,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
           <div class="p-4 pt-5">
-            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://scontent.fsub9-1.fna.fbcdn.net/v/t39.30808-6/262223635_2208533269303806_1976217189306002877_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2sg5Z7l1Ou8AX9ou6CL&_nc_ht=scontent.fsub9-1.fna&oh=a6ba50b535f5a5ee4076f270eb720e98&oe=61AE3348)"    ></a>
+            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://scontent.fsub9-1.fna.fbcdn.net/v/t39.30808-6/262223635_2208533269303806_1976217189306002877_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=f4H4WYWIX6QAX82cwNp&_nc_ht=scontent.fsub9-1.fna&oh=564d35a27ae0480a8ef68ff9da2af706&oe=61B61C48)"    ></a>
             <div class="profile-text text-center mb-4">Raihanda Naufal Ashava <br> 5026201040</div>
             <ul class="list-unstyled components mb-5">
               <li>
@@ -46,22 +46,11 @@
                 <a href="http://127.0.0.1:8000/tugas">Tugas</a>
               </li>
               <li>
-                <a href="http://127.0.0.1:8000/tugas">Minggu Depan</a>
-              </li>
-              <li>
-                <a href="http://127.0.0.1:8000/tugas">Praktikum</a>
+                <a href="http://127.0.0.1:8000/sandal">Sandal</a>
               </li>
             </ul>
 
-            <div class="footer" style="font-family:Arial, Helvetica, sans-serif">
-              <p>
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                 oleh 5026201040 - Raihanda Naufal Ashava
-              </p>
-            </div>
+
           </div>
         </nav>
 
@@ -92,11 +81,21 @@
           <div class="main-container">
               @section("isikonten")
               @show
+              <div class="footer text-center fixed-bottom" style="font-family:Arial, Helvetica, sans-serif">
+                <p>
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                   oleh 5026201040 - Raihanda Naufal Ashava
+                </p>
+              </div>
          </div>
+
           <!--main container end-->
+
         </div>
       </div>
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->

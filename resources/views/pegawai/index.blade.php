@@ -1,5 +1,5 @@
 @extends("layout.ceria")
-@section("title", "Input Tugas")
+@section("title", "Pegawai")
 
 @section("isikonten")
 
@@ -9,6 +9,12 @@
 
 	<br/>
 	<br/>
+
+    <p>Cari Data Pegawai :</p>
+	<form action="/pegawai/cari" method="GET">
+		<input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
+		<input class="btn btn-success" type="submit" value="CARI">
+	</form>
 
 	<table class="table table-success table-striped">
         	<tr>
@@ -32,6 +38,8 @@
 		</tr>
 		@endforeach
 	</table>
+
+  {{ $pegawai->links()  }}
 
     @endsection
 

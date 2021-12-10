@@ -1,5 +1,5 @@
 @extends("layout.ceria")
-@section("title", "Input Tugas")
+@section("title", "Absen")
 
 @section("isikonten")
 
@@ -9,19 +9,24 @@
 
 	<br/>
 	<br/>
+    <p>Cari Data Absen Pegawai :</p>
+    <form style="margin-top: 20px" class="mt-3" action="/absen/cari" method="GET">
+		<input type="text" name="cari" placeholder="Cari Absen .." value="{{ old('cari') }}">
+		<input class="btn btn-success" type="submit" value="CARI">
+	</form>
 
 	<table class="table table-success table-striped">
 		<tr>
-			<th>ID</th>
-			<th>ID Pegawai</th>
+			<th>No</th>
+			<th>Nama</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
 		@foreach($absen as $p)
 		<tr>
-			<td>{{ $p->ID }}</td>
-			<td>{{ $p->IDPegawai }}</td>
+			<td>{{ $loop->iteration }}</td>
+			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->Tanggal }}</td>
 			<td>{{ $p->Status }}</td>
 			<td>
@@ -32,5 +37,8 @@
 		</tr>
 		@endforeach
 	</table>
+
+    {{ $absen->links()  }}
+
     @endsection
 

@@ -5,10 +5,11 @@
 
 <h1>Input Absen</h1>
 
-<a href="/absen " class="btn btn-secondary"> < Kembali</a>
+<a href="/absen " class="btn btn-warning"> Kembali</a>
 
 <br/>
 <br/>
+
 
  <form action="/absen/store" method="post">
   {{ csrf_field() }}
