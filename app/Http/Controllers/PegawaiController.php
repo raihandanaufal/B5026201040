@@ -87,4 +87,8 @@ class PegawaiController extends Controller
 		return view('pegawai.index',['pegawai' => $pegawai]);
 
 	}
+    public function detail($id){
+        $pegawai = DB::table('pegawai')->where('pegawai_id',$id)->first();
+        return view('pegawai.detail', compact('pegawai'));
+        }
 }
