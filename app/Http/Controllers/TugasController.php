@@ -81,6 +81,8 @@ public function cari(Request $request)
 {
     $cari = $request->cari;
     $tugas = DB::table('tugas')
+    ->join('pegawai', 'tugas.IDPegawai', '=', 'pegawai.pegawai_id')
+    ->select('tugas.*', 'pegawai.pegawai_nama')
     ->where('NamaTugas','like',"%".$cari."%")
     ->paginate();
     return view('tugas.index',['tugas' => $tugas]);
