@@ -65,3 +65,10 @@ Route::get('/sandal/hapus/{id}','SandalController@hapus');
 Route::get('/sandal/cari','SandalController@cari');
 Route::get('/sandal/detail/{id}','SandalController@detail');
 
+//keranjangbelanja
+Route::get('/keranjang','KeranjangController@index');
+Route::get('/keranjang/beli','KeranjangController@tambah');
+Route::post('/keranjang/store','KeranjangController@store');
+Route::get('/keranjang/hapus/{id}','KeranjangController@hapus');
+
+

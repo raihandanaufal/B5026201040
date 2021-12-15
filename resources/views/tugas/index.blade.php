@@ -17,7 +17,7 @@
     <th>No</th>
    <th>Nama Pegawai</th>
    <th>Tanggal</th>
-   <th>NamaTugas</th>
+   <th>Nama Tugas</th>
    <th>Status</th>
    <th>Opsi</th>
   </tr>

@@ -33,7 +33,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
           <div class="p-4 pt-5">
-            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://scontent.fsub9-1.fna.fbcdn.net/v/t39.30808-6/262223635_2208533269303806_1976217189306002877_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=f4H4WYWIX6QAX82cwNp&_nc_ht=scontent.fsub9-1.fna&oh=564d35a27ae0480a8ef68ff9da2af706&oe=61B61C48)"    ></a>
+            <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/262223635_2208533269303806_1976217189306002877_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2GfvjQ3KQhMAX_lvk_0&_nc_ht=scontent-sin6-3.xx&oh=00_AT-FbNHYnXA9zxpDXV2iP0rbTkrdhCF6859Syxe0ZgKz7A&oe=61BE0548)"    ></a>
             <div class="profile-text text-center mb-4">Raihanda Naufal Ashava <br> 5026201040</div>
             <ul class="list-unstyled components mb-5">
               <li>
@@ -47,6 +47,9 @@
               </li>
               <li>
                 <a href="http://127.0.0.1:8000/sandal">Sandal</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:8000/keranjang">Keranjang</a>
               </li>
             </ul>
 
